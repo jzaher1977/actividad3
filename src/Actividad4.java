@@ -6,29 +6,24 @@ import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
 
+//******************************************************************//
+//**** Programa Realizado por Juan Antonio Flores Zaher Morales ****//
+//******************************************************************//
 
-//****+ Programa Realizado por Juan Antonio Flores Zaher Morales**//
 class Main {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-
-
         Deck cartas = new Deck();
 
         System.out.println("\n");
         cartas.suflle();
-
         System.out.println("\n");
         cartas.head();
-
         System.out.println("\n");
         cartas.pick();
-
         System.out.println("\n");
         cartas.hand();
-
-
     }
     public static class Card {
 
@@ -58,14 +53,14 @@ class Main {
 
         public Deck()
         {
-            //creamos deck como Array
+            //****************************************//
+            //       creamos deck como Array          //
+            //****************************************//
+
             deck = new ArrayList<Card>();
 
-
             //Agregamos todas las cartas al array de deck
-
-           // Barremos los Deck en dos partes (color negro y rojo) para agregar todas las cartas al arreglo deck
-
+            // Barremos los Deck en dos partes (color negro y rojo) para agregar todas las cartas al arreglo deck
 
             for (int palo = 0; palo < 2; palo++)
                 for (int valor = 0; valor < valorDeck.length; valor++)
@@ -76,9 +71,9 @@ class Main {
                     deck.add(new Card(paloDeck[palo], colorDeck[1], valorDeck[valor]));
         }
 
-        // Métodos solicitados por la Actividad 4
-
-
+        //****************************************//
+        // Métodos solicitados por la Actividad 4 //
+        //****************************************//
         public void suflle() {
             Collections.shuffle(deck);
             System.out.println("Se mezcló todo el Deck.");
