@@ -52,12 +52,12 @@ class Main {
         public Deck()
         {
             //****************************************//
-            //       creamos deck como Array          //
+            //       Creamos deck como Array          //
             //****************************************//
 
             deck = new ArrayList<Card>();
 
-            //Agregamos todas las cartas al array de deck
+            // Agregamos todas las cartas al array de deck
             // Barremos los Deck en dos partes (color negro y rojo) para agregar todas las cartas al arreglo deck
 
             for (int palo = 0; palo < 2; palo++)
